@@ -1,4 +1,4 @@
-# csci208-sp23-ExtremeProgramming-ShapeQueue
+# CSCI 208, Fall 2023, Extreme Programming Shape Queue
 
 We're going to build a linked-list based queue of polymorphic shapes as a whole class.  That is:  We'll all be working on *the same source code* to develop an application together as a team.  Our program will:
 
