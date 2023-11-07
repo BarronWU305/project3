@@ -5,11 +5,15 @@
 #include <string>
 using namespace std;
 
-class Shape {
+class Shape
+{
 public:
-
+    double getArea();
+    double getPerimeter();
+    void print();
+    string getName();
 
 private:
-string name;
+    string name_;
 };
 #endif
