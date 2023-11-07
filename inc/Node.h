@@ -1,6 +1,9 @@
 #include <Shape.h>
 class Node {
 public:
+	//constructors
+	Node();
+	Node(Shape* storedShape, Node* nextNode = nullptr);
 	//accessors
 	Node* getNext() const;
 	Shape* getShape() const;
@@ -8,6 +11,6 @@ public:
 	void setNext(Node* nextNode);
 	void setShape(Shape* storedShape);
 protected:
+	Shape* shape_;
 	Node* next_;
-	Shape* stored_shape_;
 };
