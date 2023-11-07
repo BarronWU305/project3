@@ -13,7 +13,7 @@ public:
     double GetBase() const;
 
     void SetHeight (double Height);// get and set the height for triangle
-    double GetHeight()const;
+    double GetHeight() const;
 
 
 private: 
