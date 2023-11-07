@@ -5,7 +5,7 @@
 using namespace std;
 
 
-ShapeReader::readFile(string filename, ShapeQueue &queue){
+void ShapeReader::readFile(string filename, ShapeQueue &queue){
 
 
 //open read in file
