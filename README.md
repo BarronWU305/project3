@@ -19,15 +19,17 @@ We'll create the class-level design diagram in class on Monday as a class.  We'l
 ## Teams:
 We'll record the teams here.
 
-*   **Main** --
-*   **Shape** -- 
-*   **Circle** --
-*   **Rectangle** --
-*   **Square** -- 
-*   **RightTriangle** -- 
-*   **Node** -- 
-*   **ShapeQueue** -- 
-*   **ShapeReader** --  
+*   **ShapeQueueMain** -- Lee, Auggie, Lorenzo
+*   **ShapeReader** -- Kelly, Natalie, Presice
+*   **ShapeQueue** -- Jaden, Xavier, Jyren
+*   **Node** -- James, Matthew, Nick
+*   **Hexagon** -- Zach, Noah, Maddie
+*   **Ellipse** -- Kyla, Kade, Miguel, Tina, Taylor
+*   **Circle** -- Kyla, Kade, Miguel, Tina, Taylor
+*   **RightTriangle** -- Jason, Ethel, Kaylei, Tyler, Stephen
+*   **Rectangle** -- Jason, Ethel, Kaylei, Tyler, Stephen
+*   **Square** -- Hamid, Kevin, Markus
+*   **Shape** -- Domenick, Kyle, Jacob
 *   Makefile / organization -- Dr. Wiegand
 
 ## Naming Conventions and Style
