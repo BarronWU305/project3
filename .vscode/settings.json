@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "fstream": "cpp",
+<<<<<<< HEAD
         "string": "cpp"
+=======
+        "iostream": "cpp"
+>>>>>>> 3f99da3cffb147fb71ed0776c8deb9bff1df78e9
     }
 }
