@@ -19,5 +19,5 @@ double RightTriangle::getHeight(){
 
 
 double RightTriangle::getArea(){
-    return (.5 * (height_ * base_) )
+    return (.5 * (height_ * base_) ); 
 }
