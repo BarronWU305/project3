@@ -1,7 +1,7 @@
 #ifndef RECTANGLE_
 #define RECTANGLE_
 
-class Rectangle{
+class Rectangle {
 
 private:
   double length_;
