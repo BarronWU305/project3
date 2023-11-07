@@ -15,7 +15,7 @@ public:
   double getWidth() const;
 
   double getArea() const;
-  
+  double getPerimeter () const; //get the perimeter on thursday 
 
 
 

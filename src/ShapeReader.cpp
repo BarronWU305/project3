@@ -5,11 +5,15 @@
 using namespace std;
 
 
-ShapeReader::readFile(string filename, ShapeQueue &queue){
+void ShapeReader::readFile(string filename, ShapeQueue &queue){
 
 
 //open read in file
 //switch
+//switch (shape) {
+//    case Circle: 
+//          xxxx
+// }
 // add to queue 
 
 }
