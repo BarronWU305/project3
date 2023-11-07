@@ -3,15 +3,17 @@
 #include <string>
 using namespace std;
 
-    double Shape::getArea() {
-
-    }
-    double Shape::getPerimeter(){
-
-    }
-    void Shape::print() {
-
-    }
-    string Shape::getName() {
-        
-    }
+double Shape::getArea()
+{
+}
+double Shape::getPerimeter()
+{
+}
+string Shape::getName(string shapename)
+{
+    name_ = shapename;
+    return name_;
+}
+void Shape::print()
+{
+}
