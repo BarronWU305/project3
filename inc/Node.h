@@ -1,3 +1,7 @@
+#pragma once
+#ifndef NODE_H_
+#define NODE_H_
+
 #include <Shape.h>
 class Node {
 public:
@@ -14,3 +18,5 @@ protected:
 	Shape* shape_;
 	Node* next_;
 };
+
+#endif

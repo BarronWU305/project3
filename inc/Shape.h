@@ -10,7 +10,7 @@ class Shape
 public:
     virtual double getArea();
     virtual double getPerimeter();
-    string getName();
+    string getName(string shapename);
     void print();
 
 private:
