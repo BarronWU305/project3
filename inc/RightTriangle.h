@@ -9,9 +9,16 @@ using namespace std;
 
 class RightTriangle{
 public:
-        void SetBase (int Base);// get and set the base for triangle
-        int GetBase();
+    void SetBase (double Base);// get and set the base for triangle
+    double GetBase();
 
+    void SetHeight (double Height);// get and set the height for triangle
+    double GetHeight();
+
+
+private: 
+    double base_;
+    double height_;
 
 }
 
