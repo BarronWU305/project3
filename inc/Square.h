@@ -1,9 +1,10 @@
 #ifndef SQUARE_H_
 #define SQUARE_H_
 
-#include "../inc/Rectangle.h"
+#include <string>
+#include "Rectangle.h"
 
-class Square : public : Rectangle {
+class Square : public Rectangle {
   public:
     void getArea();
     void getPerimeter();
@@ -11,6 +12,7 @@ class Square : public : Rectangle {
   private:
     int length_;
     int width_;
+    std::string name_;
 };
 
 #endif // !SQUARE_H_
