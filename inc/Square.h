@@ -7,7 +7,7 @@ class Square : public : Rectangle {
   public:
     void getArea();
     void getPerimeter();
-
+    void print();
   private:
     int length_;
     int width_;
