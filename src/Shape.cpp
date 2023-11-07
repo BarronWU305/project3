@@ -1,4 +1,7 @@
 #include <Shape.h>
+#include <iostream>
+#include <string>
+using namespace std;
 
     double Shape::getArea() {
 
