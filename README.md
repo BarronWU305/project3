@@ -33,10 +33,11 @@ We'll record the teams here.
 *   Makefile / organization -- Dr. Wiegand
 
 ## Naming Conventions and Style
-*   Internal state fields of classes: camel case with underscore suffix
-*   Method names: Mixed case
-*   Class names: Mixed case
+*   Internal state fields of classes: `snake_case_` with underscore suffix
+*   Method names: `camelCase`
+*   Class names: `MixedCase`
+*   In-coming parameter names: TBD
 *   Variables/fields/types -- Expressed as nouns, functions/methods -- expressed verb-phrases
-*   Body source files end with the `.cc` suffix
+*   Body source files end with the `.cpp` suffix
 *   Everyone will put themselves in the `std` namespace
 *   Think carefully about your commenting style
