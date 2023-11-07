@@ -3,8 +3,14 @@
 
 #include "Rectangle.h"
 
-class Square {
-  
+class Square : public : Rectangle {
+  public:
+    void getArea();
+    void getPerimeter();
+
+  private:
+    int length_;
+    int width_;
 };
 
 #endif // !SQUARE_H_
