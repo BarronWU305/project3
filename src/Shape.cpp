@@ -1,14 +1,17 @@
 #include <Shape.h>
+#include <iostream>
+#include <string>
+using namespace std;
 
-    double getArea() {
-
-    }
-    double getPerimeter(){
-
-    }
-    void print() {
+    double Shape::getArea() {
 
     }
-    string getName() {
+    double Shape::getPerimeter(){
+
+    }
+    void Shape::print() {
+
+    }
+    string Shape::getName() {
         
     }
