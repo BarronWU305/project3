@@ -8,9 +8,9 @@ using namespace std;
 class Shape
 {
 public:
-    double getArea();
-    double getPerimeter();
-    string getName();
+    virtual double getArea();
+    virtual double getPerimeter();
+    string getName(string shapename);
     void print();
 
 private:
