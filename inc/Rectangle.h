@@ -8,10 +8,15 @@ private:
   double width_;
 
 public:
+  void setLength (double Length);
   double getLength() const;
+  
+  void setWidth (double Width);
   double getWidth() const;
+
   double getArea() const;
   
+
 
 
 };
