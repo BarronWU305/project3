@@ -15,14 +15,7 @@ using namespace std;
 
 class ShapeReader {
 public: 
-   ShapeReader(); 
     void readFile(string filename, ShapeQueue);
-    
-//    void addToQueue()
-
-protected: 
-
-
 
 };
 

@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void ShapeReader::readFile(string filename, ShapeQueue &queue){
+void ShapeReader::readFile(string filename, ShapeQueue &queue) {
     int returnCode = 0;
 
     ifstream fin; 
@@ -14,7 +14,7 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue){
     if (!fin.is_open()){
         
         cerr << "ERROR:" << filename << " does not exist." << endl;
-        returnCode =1;
+        returnCode = 1;
     }
 
     
