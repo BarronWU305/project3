@@ -6,7 +6,17 @@
 
 using namespace std;
 
+class ShapeReader{
+public: 
+
+    void readFile(string filename, ShapeQueue);
+    
+//    void addToQueue()
+
+protected: 
 
 
+
+};
 
 #endif
