@@ -2,6 +2,11 @@
 #define SHAPEREADER_H_
 
 #include "ShapeQueue.h"
+#include "Circle.h"
+#include "Ellipse.h"
+#include "Hexagon.h"
+#include "Rectangle.h"
+#include "RightTriangle.h"
 
 #include <iostream>
 #include <fstream>
