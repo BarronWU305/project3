@@ -7,4 +7,12 @@
 
 using namespace std;
 
+class RightTriangle{
+public:
+        void SetBase (int Base);// get and set the base for triangle
+        int GetBase();
+
+
+}
+
 #endif
