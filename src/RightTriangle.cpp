@@ -16,3 +16,8 @@ void RightTriangle::setHeight(double Height){ // defined both get and set height
 double RightTriangle::getHeight(){
     return height_;
 }
+
+
+double RightTriangle::getArea(){
+    return (.5 * (height_ * base_) ); 
+}
