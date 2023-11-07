@@ -1,10 +1,16 @@
 #ifndef SQUARE_H_
 #define SQUARE_H_
 
-#include "Rectangle.h"
+#include "../inc/Rectangle.h"
 
-class Square {
-  
+class Square : public : Rectangle {
+  public:
+    void getArea();
+    void getPerimeter();
+    void print();
+  private:
+    int length_;
+    int width_;
 };
 
 #endif // !SQUARE_H_

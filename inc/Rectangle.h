@@ -1,7 +1,7 @@
 #ifndef RECTANGLE_
 #define RECTANGLE_
 
-class Rectangle{
+class Rectangle {
 
 private:
   double length_;
@@ -10,6 +10,8 @@ private:
 public:
   double getLength() const;
   double getWidth() const;
+  double getArea() const;
+  
 
 
 };
