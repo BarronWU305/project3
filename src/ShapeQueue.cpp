@@ -8,36 +8,52 @@ ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape)
 {
     this->front_ = NULL;
 
-    if(front_ == NULL && back_ == NULL){
-    Node *current = sourceShape.front_, sourceShape.back_;
-     while (current != NULL)
+    if (front_ == NULL && back_ == NULL)
     {
-        current->GetData();
-        this->Push(current->GetData())
-            current = current->GetNextNode();
+        Node *current = sourceShape.front_;
+        Node *current = sourceShape.back_;
+
+        while (current != NULL)
+        {
+            current->getShape();
+            this->pushShape(current->getShape())
+                current = current->getNext();
+        }
     }
-} 
-    }
+}
 
-
-
-void ShapeQueue::pushShape(string shape_){
-    Node *newNode = new Node (shape_, back_);
+void ShapeQueue::pushShape(string shape_)
+{
+    Node *newNode = new Node(shape_, back_);
     back_ = newNode;
 }
 
-string ShapeQueue::popShape(){
+string ShapeQueue::popShape()
+{
     string poppedData = "";
 
-    if(!*back_ == NULL) {
-        string poppedData += front_->GetData
+    if (!*back_ == NULL)
+    {
+        string poppedData += front_->getShape();
+        *temp = front_;
+        front_= front_ -> getNext(); 
 
-        newFront_ = front_->GetNextNode();
-        front_ = newFront_
-        
+        delete temp;
+    }
 
-        delete newFront_
+    if(!*front_){
+        back_ = nullptr;
 
     }
     return poppedData
+
+}
+
+void ShapeQueue::printQueue() const{
+    Node *current = front_;
+
+    while (current != NULL) {
+        cout << " " << current->getShape() << endl;
+        current = current->getNext();
+    }
 }
