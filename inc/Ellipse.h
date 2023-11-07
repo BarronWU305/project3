@@ -13,8 +13,8 @@ double getSecondAxis();
 virtual void printEllipse();
 
 protected:
-double axis_first_ const;
-double axis_second_ const;
+double axis_first_() const;
+double axis_second_() const;
 };
 
 #endif
