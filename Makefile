@@ -18,10 +18,10 @@ INCDIR=./inc
 BINDIR=./bin
 
 # Create file groups for each directory
-SOURCES  := $(wildcard $(SRCDIR)/*.cc)
+SOURCES  := $(wildcard $(SRCDIR)/*.cpp)
 INCLUDES := $(wildcard $(INCDIR)/*.h)
-OBJECTS  := $(SOURCES:$(SRCDIR)/%.cc=$(OBJDIR)/%.o)
-# ^^ i.e., a .o file in OBJDIR for every .cc file in SRCDIR
+OBJECTS  := $(SOURCES:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
+# ^^ i.e., a .o file in OBJDIR for every .cpp file in SRCDIR
 
 
 ### --- Build Target Rules --- ###
@@ -35,8 +35,8 @@ $(BINDIR)/$(PROGRAMS):	$(OBJECTS)
 	$(LINKER) -o $@  $(OBJECTS) $(LDFLAGS)
 
 # For every object file in the object file set,
-# compile the related cc file
-$(OBJECTS):	$(OBJDIR)/%.o : $(SRCDIR)/%.cc $(INCDIR)/%.h
+# compile the related cpp file
+$(OBJECTS):	$(OBJDIR)/%.o : $(SRCDIR)/%.cpp $(INCDIR)/%.h
 	$(CC) $(CFLAGS)  -o $@  -c $<
 
 
