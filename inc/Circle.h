@@ -7,14 +7,14 @@
 using namespace std;
 
 class Circle : public Ellipse  {
-public: 
-    void getArea();
-    void getPerimeter();
-    void print();
-    void setAxises();
+    public: 
+      void getArea();
+      void getPerimeter();
+      void print();
+      void setAxises();
 
-protected:
-    double radius_;
+    protected:
+      double radius_;
 
 }
 
@@ -25,3 +25,4 @@ protected:
 
 
 #endif
+#define CIRCLE_H_
