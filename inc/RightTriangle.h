@@ -20,6 +20,6 @@ private:
     double base_;
     double height_;
 
-}
+};
 
 #endif
