@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Circle.h"
 #include "Ellipse.h"
 #include "Hexagon.h"
@@ -10,14 +11,13 @@
 #include "ShapeQueue.h"
 #include "ShapeReader.h"
 
-
-
 using namespace std; 
 
 
 int main() {
 
-
+    string thingy ; 
+    
 
 
 
