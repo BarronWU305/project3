@@ -2,17 +2,17 @@
 
 
 
-void RightTriangle::SetBase(double Base){ // defined both get and set height
+void RightTriangle::setBase(double Base){ // defined both get and set height
     base_ = Base;
 }
-double RightTriangle::GetBase(){
+double RightTriangle::getBase(){
     return base_;
 }
 
 
-void RightTriangle::SetHeight(double Height){ // defined both get and set height
+void RightTriangle::setHeight(double Height){ // defined both get and set height
     height_ = Height;
 }
-double RightTriangle::GetHeight(){
+double RightTriangle::getHeight(){
     return height_;
 }
