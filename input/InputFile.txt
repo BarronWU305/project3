@@ -1,1 +1,6 @@
-
+Circle 57 78
+Ellipse 89.6 27.9
+Hexagon 43
+Rectangle 96.4 62.3
+RightTriangle 19.2 34.8
+Square 7 16

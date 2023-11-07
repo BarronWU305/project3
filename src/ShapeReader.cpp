@@ -10,7 +10,7 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
 
     ifstream fin; 
     fin.open(filename);
-
+    
     if (!fin.is_open()){
         
         cerr << "ERROR:" << filename << " does not exist." << endl;
