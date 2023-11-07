@@ -1,14 +1,14 @@
 #include <Shape.h>
 
-    double getArea() {
+    double Shape::getArea() {
 
     }
-    double getPerimeter(){
+    double Shape::getPerimeter(){
 
     }
-    void print() {
+    void Shape::print() {
 
     }
-    string getName() {
+    string Shape::getName() {
         
     }
