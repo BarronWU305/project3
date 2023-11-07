@@ -1,15 +1,15 @@
 #ifndef RECTANGLE_
 #define RECTANGLE_
 
-class rectangle{
+class Rectangle{
 
 private:
-double length;
-double width;
+  double length_;
+  double width_;
 
 public:
-double getLength() const;
-double getWidth() const;
+  double getLength() const;
+  double getWidth() const;
 
 
 };
