@@ -8,8 +8,8 @@ using namespace std;
 class Shape
 {
 public:
-    double getArea();
-    double getPerimeter();
+    virtual double getArea();
+    virtual double getPerimeter();
     string getName();
     void print();
 

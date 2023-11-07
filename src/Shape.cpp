@@ -9,10 +9,10 @@ double Shape::getArea()
 double Shape::getPerimeter()
 {
 }
-void Shape::print()
-{
-}
 string Shape::getName()
 {
     return name_;
+}
+void Shape::print()
+{
 }
