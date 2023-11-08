@@ -1,6 +1,7 @@
 #include <ShapeReader.h>
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -16,16 +17,14 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
         cerr << "ERROR:" << filename << " does not exist." << endl;
         returnCode = 1;
     }
+    else {
+           void *ptr = new Circle
+    }
 
-    
+    void *ptr = new Circle
 
-
+//queue.InsertShape(ptr)
 //open read in file
-//switch
-//switch (shape) {
-//    case Circle: 
-//          xxxx
-// }
 // add to queue 
 
 }
