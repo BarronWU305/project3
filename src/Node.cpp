@@ -1,10 +1,10 @@
 #include <Shape.h>
 #include <Node.h>
 
-Node::Node() : shape_(nullptr), next_(nullptr) {}
+Node::Node() : shape_(nullptr), next_(nullptr), previous_(nullptr) {}
 
 // must have shape pointer, next node optional
-Node::Node(Shape* storedShape, Node* nextNode) : shape_(storedShape), next_(nextNode) {}
+Node::Node(Shape* storedShape, Node* nextNode, Node* previousNode) : shape_(storedShape), next_(nextNode), previous_(nextNode) {}
 
 Node* Node::getNext() const {
 	return next_;
@@ -23,7 +23,7 @@ void Node::setNext(Node* nextNode) {
 }
 
 void Node::setPrevious(Node* previousNode){
-	
+	this->previous_ = previousNode;
 }
 
 void Node::setShape(Shape* storedShape) {
