@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void ShapeReader::readFile(string filename, ShapeQueue &queue) {
+int readFile(string filename, ShapeQueue &queue) {
     int returnCode = 0;
 
     ifstream fin; 
@@ -17,8 +17,24 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
         cerr << "ERROR:" << filename << " does not exist." << endl;
         returnCode = 1;
     }
+
     else {
-           void *ptr = new Circle
+        while (!fin.eof()) {
+           string shapeName;
+           fin >> shapeName;
+
+           // Do you want to check if that failed?  fin.fail()
+           if (shapeName == "Circle") {
+             double radius;
+             fin >> radius;
+             // Do you want to check if that failed?  fin.fail()
+
+             Shape *ptr = new Circle(radius); // Except the Circle.h doesn't show this constructor 
+             queue.pushShape(ptr);
+           }
+
+           else if (shapeName == "Square") {} // Etc...
+        }
     }
 
     void *ptr = new Circle
@@ -26,7 +42,7 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
 //queue.InsertShape(ptr)
 //open read in file
 // add to queue 
-
+    return retunrCode;
 }
 
 // switch
