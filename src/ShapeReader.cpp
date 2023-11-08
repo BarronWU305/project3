@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void ShapeReader::readFile(string filename, ShapeQueue &queue) {
+int readFile(string filename, ShapeQueue &queue) {
     int returnCode = 0;
 
     ifstream fin; 
@@ -17,8 +17,8 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
         cerr << "ERROR:" << filename << " does not exist." << endl;
         returnCode = 1;
     }
-    else {
 
+    else {
            void *ptr = new Circle
     }
 
@@ -27,8 +27,6 @@ void ShapeReader::readFile(string filename, ShapeQueue &queue) {
 //queue.InsertShape(ptr)
 //open read in file
 // add to queue 
-//while not eof read in
-// look week 7 list exmaple 
 
 }
 
