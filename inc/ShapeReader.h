@@ -1,4 +1,3 @@
-#ifndef SHAPEREADER_H_
 #define SHAPEREADER_H_
 
 #include <ShapeQueue.h>
@@ -14,9 +13,6 @@ using namespace std;
 
 class ShapeReader {
 public: 
-  //  ShapeReader(); 
-    int readFile(string filename, ShapeQueue &queue);
+  int readFile(string filename, ShapeQueue &queue);
 
-};
 
-#endif
