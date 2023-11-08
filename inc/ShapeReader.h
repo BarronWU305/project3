@@ -14,5 +14,5 @@ using namespace std;
 class ShapeReader {
 public: 
   int readFile(string filename, ShapeQueue &queue);
-
+}
 
