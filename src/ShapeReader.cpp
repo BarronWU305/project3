@@ -19,67 +19,94 @@ int readFile(string filename, ShapeQueue &queue) {
     }
 
     else {
-            while (!fin.eof()) {
+           while (!fin.eof()) {
            string shapeName;
            fin >> shapeName;
 
-           // Do you want to check if that failed?  fin.fail()
            if (shapeName == "Circle") {
              double radius;
              fin >> radius;
              // Do you want to check if that failed?  fin.fail()
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read radius." << endl;
+               }
+               else {
+                    Shape *ptr = new Circle(radius); // Except the Circle.h doesn't show this constructor 
+                    queue.pushShape(ptr);
+               }
+          }
 
-             Shape *ptr = new Circle(radius); // Except the Circle.h doesn't show this constructor 
-             queue.pushShape(ptr);
-           }
+          else if (shapeName == "Square") {
+               double length;
+               double width;
+               fin >> length >> width;
 
-           else if (shapeName == "Square") {
-                double length;
-                double width;
-                fin >> length >> width;
-                //Do you want to check if that failed? fin.fail()
+                    // Check if reading failed
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read length or width." << endl;
+               }
+               else {
+                    Shape *ptr = new Square(length, width);
+                    queue.pushShape(ptr);
+               }
+          }
 
-                Shape *ptr = new Square(length, width);
-                queue.pushShape(ptr);
-           }
+          else if (shapeName = "Ellipse") {
+               double firstAxis;
+               double secondAxis;
+               fin >> firstAxis >> secondAxis;
 
-           else if (shapeName = "Ellipse") {
-            double firstAxis;
-            double secondAxis;
-            fin >> firstAxis >> secondAxis;
-            //Do you want to check if that failed? fin.fail()
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read first and second Axis." << endl;                   
+               }
+               else {
+                    Shape *ptr = new Ellipse(firstAxis, secondAxis);
+                    queue.pushShape(ptr);
+               }
+          }
 
-            Shape *ptr = new Ellipse(firstAxis, secondAxis);
-            queue.pushShape(ptr);
-           }
+          else if (shapeName = "Hexagon") {
+               int sideLength;
+               fin >> sideLength;
 
-           else if (shapeName = "Hexagon") {
-                int sideLenght;
-                fin >> sideLength;
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read side length." << endl;                   
+               }
+               else {
+                    Shape *ptr = new Hexagon(sideLength);
+                    queue.pushShape(ptr);
+               }
+          }
 
-                Shape *ptr = new Hexagon(sideLength);
-                queue.pushShape(ptr);
-           }
+          else if (shapeName = "Rectangle") {
+               double length;
+               double width;
+               fin >> length >> width;
 
-           else if (shapeName = "Rectangle") {
-                double width;
-                double length;
-                fin >> width >> length;
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read length or width." << endl;
+                }
+               else {
+                    Shape *ptr = new Rectangle(length, width);
+                    queue.pushShape(ptr);
+               }
+          }
 
-                Shape *ptr = new Rectangle(width, length);
-                queue.pushShape(ptr);
-           }
+          else if (shapeName = "RightTriangle") {
+               double base;
+               double height;
+               fin >> base >> height;
 
-           else if (shapeName = "RightTriangle") {
-                double base;
-                double height;
-                fin >> base >> height;
-
-                Shape *ptr = new RightTriangle(base, height);
-                queue.pushShape(ptr);
-           }
-        } 
-    }
+               if (fin.fail()) {
+                    cerr << "ERROR: Failed to read base or height." << endl;
+               }
+               else {
+                    Shape *ptr = new RightTriangle(base, height);
+                    queue.pushShape(ptr);
+               }
+          }
+     } 
+}
 
 
 
