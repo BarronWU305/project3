@@ -51,7 +51,7 @@ int readFile(string filename, ShapeQueue &queue) {
                }
           }
 
-          else if (shapeName = "Ellipse") {
+          else if (shapeName == "Ellipse") {
                double firstAxis;
                double secondAxis;
                fin >> firstAxis >> secondAxis;
@@ -65,7 +65,7 @@ int readFile(string filename, ShapeQueue &queue) {
                }
           }
 
-          else if (shapeName = "Hexagon") {
+          else if (shapeName == "Hexagon") {
                int sideLength;
                fin >> sideLength;
                     // Check if reading failed
@@ -78,7 +78,7 @@ int readFile(string filename, ShapeQueue &queue) {
                }
           }
 
-          else if (shapeName = "Rectangle") {
+          else if (shapeName == "Rectangle") {
                double length;
                double width;
                fin >> length >> width;
@@ -92,7 +92,7 @@ int readFile(string filename, ShapeQueue &queue) {
                }
           }
 
-          else if (shapeName = "RightTriangle") {
+          else if (shapeName == "RightTriangle") {
                double base;
                double height;
                fin >> base >> height;
@@ -105,7 +105,10 @@ int readFile(string filename, ShapeQueue &queue) {
                     queue.pushShape(ptr);
                }
           }
+     
      } 
+
+      fin.close(); // Close the file after reading
 }
 
 
