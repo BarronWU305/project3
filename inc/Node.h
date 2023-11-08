@@ -7,7 +7,7 @@ class Node {
 public:
 	//constructors
 	Node();
-	Node(Shape* storedShape, Node* nextNode = nullptr);
+	Node(Shape* storedShape, Node* nextNode = nullptr, Node* previousNode = nullptr);
 	//accessors
 	Node* getNext() const;
 	Node* getPrevious() const;
