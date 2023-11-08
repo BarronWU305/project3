@@ -6,9 +6,14 @@
 
 class Square : public Rectangle {
   public:
+    Square();
     void getArea();
     void getPerimeter();
+    void getName();
+    void getLength();
+    void getWidth();
     void print();
+  
   private:
     int length_;
     int width_;
