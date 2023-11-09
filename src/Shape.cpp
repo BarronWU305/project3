@@ -8,4 +8,3 @@ Shape::Shape(string Name) : name_(Name) {}
 string Shape::getName() {
     return name_;
 }
-
