@@ -8,8 +8,8 @@ class Square : public Rectangle {
 public:
   Square(double Side);
 
-  virtual double getArea() const;
-  virtual double getPerimeter() const;
+  virtual double getArea(double Length) const;
+  virtual double getPerimeter(double Length) const;
   virtual void print() const;
 
   virtual void setLength (double Length);

@@ -4,11 +4,17 @@ Square::Square(double Side) : Rectangle(Side, Side) {
   name_ = "Square";
 }
 
-
-
- void Square::setLength (double Length) {
+virtual void Square::setLength (double Length) {
   Rectangle::setLength(Length);
   Rectangle::setWidth(Length);
- }
+}
 
- // Also handle setWidth
+virtual double Square::getArea(double Length) const {
+  double area = Length * Length;
+  return area;
+}
+
+virtual double Square::getPerimeter() const {
+  double perimeter = Length * 4;
+  return perimeter;
+}
