@@ -33,15 +33,14 @@ int readFile(string filename, ShapeQueue &queue) {
                     }
                }
                else if (shapeName == "Square") {
-                    double length;
-                    double width;
-                    fin >> length >> width;
+                    double side;
+                    fin >> side;
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read length or width." << endl;
                     }
                     else {
-                         Shape *ptr = new Square(length, width); 
+                         Shape *ptr = new Square(side);
                          queue.pushShape(ptr);
                     }
                }
@@ -99,7 +98,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     }
                }
           }
-          
+
           fin.close(); // Close the file after reading
      }
 
