@@ -21,7 +21,7 @@ public:
 
     virtual double getArea() const; //declaring polymorphic getArea method
     virtual double getPerimeter() const; //declaring polymorphic getPerimeter method
-    virtual void print() const; ////declaring print function
+    virtual void print() const; //declaring print function
 
 protected: 
     double base_;
