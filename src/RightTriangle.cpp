@@ -1,4 +1,6 @@
 #include <RightTriangle.h>
+#include <cmath>
+
 
 RightTriangle::RightTriangle(double Base, double Height) 
   : Shape("RightTriangle"), base_(Base), height_(Height) {}
@@ -22,4 +24,13 @@ double RightTriangle::getHeight() const{
 
 double RightTriangle::getArea() const{
     return (.5 * (height_ * base_) ); 
+}
+
+
+double RightTriangle::getPerimeter()const{
+    return (height_ + base_ + sqrt(pow(height_) + pow(base_)))
+}
+
+void print(){
+    
 }
