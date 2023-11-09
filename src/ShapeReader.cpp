@@ -108,6 +108,7 @@ int readFile(string filename, ShapeQueue &queue) {
      
      } 
 
+     // ptr = NULL; ?? 
       fin.close(); // Close the file after reading
 }
 
