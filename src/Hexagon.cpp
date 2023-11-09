@@ -5,7 +5,7 @@
 Hexagon::Hexagon(double Length) 
   : Shape("Hexagon"), length_(Length) {}
 
-double Hexagon::getLength( ){
+double Hexagon::getLength(){
   return length_;
 }
 double Hexagon::getArea() const; {
