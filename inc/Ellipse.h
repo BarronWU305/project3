@@ -9,11 +9,13 @@ class Ellipse : public Shape {
 public:
     Ellipse(double AxisFirst, double AxisSecond);
 
+    //Accessor Methods
+    virtual void getFirstAxis() const;
+    virtual void getSecondAxis() const;
+
+    //Mutator Methods
     virtual double getArea() const;
     virtual double getPerimeter() const;
-
-    double getFirstAxis() const;
-    double getSecondAxis() const;
 
     virtual void print() const;
 
