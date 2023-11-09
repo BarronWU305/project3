@@ -5,7 +5,8 @@
 #include <Shape.h>
 #include <ShapeQueue.h>
 #include <ShapeReader.h>
-#include <string>
+#include <string> 
+
 using namespace std; 
 
 int main() {
@@ -18,7 +19,8 @@ int main() {
 	int base; 
 	int width; 
 	int radius; //MAY NOT NEED
-	string shape;
+	string shape; 
+
 //GET FILE NAME WE NEED TO BE READ IN  
 	cout << "Enter out the name of the file that we will be reading in" << endl; 
 	cin >> fileName; 
@@ -41,6 +43,8 @@ int main() {
 //option that allows user to pick a shape 
 cout << "Enter the shape you would like to print out:" << endl;
 cin >> shape;
+
+
 //option that allows user to pick size per. 
 
 
