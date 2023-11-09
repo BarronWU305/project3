@@ -32,11 +32,11 @@ double RightTriangle::getPerimeter() const{ //defined get perimeter
 }
 
 void RightTriangle::print() const{
-    cout << "Shape: " << getName() << endl; 
-    cout << "Base = " << base_ << endl;
-    cout << "Height = " << height_ << endl; 
-    cout << "Area = " << getArea() << endl;
-    cout << "Perimeter = " << getPerimeter() << endl; 
+    cout << "Shape: " << getName() << endl; // printing shape
+    cout << "Base = " << base_ << endl; // printing base
+    cout << "Height = " << height_ << endl; // printing height
+    cout << "Area = " << getArea() << endl; // printing area
+    cout << "Perimeter = " << getPerimeter() << endl;  // printing area
 
 
 }
