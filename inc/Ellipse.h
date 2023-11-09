@@ -1,20 +1,25 @@
-#ifndef ELLIPSE_
-#define ELLIPSE_
+#ifndef ELLIPSE_H_
+#define ELLIPSE_H_
+
+#include <Shape.h>
 
 using namespace std;
 
-class Ellipse {
+class Ellipse : public Shape {
 public:
+    Ellipse(double AxisFirst, double AxisSecond);
 
-double getArea(double axis_first_,double axis_second_);
-double getPerimeter(double axis_first_,double axis_second_);
-double getFirstAxis();
-double getSecondAxis();
-virtual void printEllipse();
+    virtual double getArea() const;
+    virtual double getPerimeter() const;
+
+    double getFirstAxis() const;
+    double getSecondAxis() const;
+
+    virtual void print() const;
 
 protected:
-double axis_first_() const;
-double axis_second_() const;
+    double axis_first_;
+    double axis_second_;
 };
 
 #endif
