@@ -8,7 +8,7 @@ class Node {
 public:
 	//constructors
 	Node();
-	Node(Shape* storedShape, Node* nextNode = nullptr, Node* previousNode = nullptr);
+	Node(Shape* StoredShape, Node* NextNode = nullptr, Node* PreviousNode = nullptr);
 
 	//accessors
 	Node* getNext() const;
@@ -16,9 +16,9 @@ public:
 	Shape* getShape() const;
 
 	//mutators
-	void setNext(Node* nextNode);
-	void setPrevious(Node* previousNode);
-	void setShape(Shape* storedShape);
+	void setNext(Node* NextNode);
+	void setPrevious(Node* PreviousNode);
+	void setShape(Shape* StoredShape);
 	
 protected:
 	Shape* shape_;   // shape object to be stored
