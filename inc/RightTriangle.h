@@ -25,8 +25,8 @@ public:
     virtual void print() const; //declaring print function
 
 protected: 
-    double base_;
-    double height_;
+    double base_; // variable for base
+    double height_; // variable for height 
 
 };
 
