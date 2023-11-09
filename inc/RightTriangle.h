@@ -23,7 +23,7 @@ public:
     virtual double getPerimeter() const;
     virtual void print() const;
 
-private: 
+protected: 
     double base_;
     double height_;
 
