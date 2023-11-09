@@ -32,6 +32,10 @@ int main() {
 	}
 	
 // More options for the user?
+//option that allows user to pick a shape 
+
+
+//option that allows user to pick size per. 
 
 
 //All is good :)
