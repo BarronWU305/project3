@@ -12,8 +12,8 @@ public:
     Ellipse(double AxisFirst, double AxisSecond);
 
     // Accessor Methods
-    virtual void getFirstAxis() const;
-    virtual void getSecondAxis() const;
+    virtual double getFirstAxis() const;
+    virtual double getSecondAxis() const;
 
     // Mutator Methods
     virtual double getArea() const;
