@@ -1,6 +1,7 @@
 #include<iostream>
 #include<iomanip>
 #include<Hexagon.h>
+#include<cmath>
 
 Hexagon::Hexagon(double Length) 
   : Shape("Hexagon"), length_(Length) {}
