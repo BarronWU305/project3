@@ -5,8 +5,8 @@
 Hexagon::Hexagon(double Length) 
   : Shape("Hexagon"), length_(Length) {}
 
-void Hexagon::getLength(double Length){
-  length_ = Length;
+double Hexagon::getLength( ){
+  return length_;
 }
 double Hexagon::getArea() const; {
   return (((3 * sqrt(3)) / 2) * length_);
