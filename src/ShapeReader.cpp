@@ -28,7 +28,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read radius." << endl;
                     }
                     else {
-                         Shape *ptr = new Circle(radius); // Except the Circle.h doesn't show this constructor
+                         Shape *ptr = new Circle(radius); 
                          queue.pushShape(ptr);
                     }
                }
@@ -41,7 +41,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read length or width." << endl;
                     }
                     else {
-                         Shape *ptr = new Square(length, width); // Except the Square.h doesn't show this constructor
+                         Shape *ptr = new Square(length, width); 
                          queue.pushShape(ptr);
                     }
                }
@@ -54,7 +54,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read first and second Axis." << endl;
                     }
                     else {
-                         Shape *ptr = new Ellipse(firstAxis, secondAxis); // Except the Ellipse.h doesn't show this constructor
+                         Shape *ptr = new Ellipse(firstAxis, secondAxis); 
                          queue.pushShape(ptr);
                     }
                }
@@ -66,7 +66,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read side length." << endl;
                     }
                     else {
-                         Shape *ptr = new Hexagon(sideLength); // Except the Hexagon.h doesn't show this constructor
+                         Shape *ptr = new Hexagon(sideLength); 
                          queue.pushShape(ptr);
                     }
                }
@@ -80,7 +80,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read length or width." << endl;
                     }
                     else {
-                         Shape *ptr = new Rectangle(length, width); // Except the Rectangle.h doesn't show this constructor
+                         Shape *ptr = new Rectangle(length, width); 
                          queue.pushShape(ptr);
                     }
                }
@@ -94,13 +94,12 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read base or height." << endl;
                     }
                     else {
-                         Shape *ptr = new RightTriangle(base, height); // Except the RIghtTriangle.h doesn't show this constructor
+                         Shape *ptr = new RightTriangle(base, height); 
                          queue.pushShape(ptr);
                     }
                }
           }
-
-          // ptr = NULL; ??
+          
           fin.close(); // Close the file after reading
      }
 
