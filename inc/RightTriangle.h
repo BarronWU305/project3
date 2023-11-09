@@ -18,7 +18,7 @@ public:
     double getArea();
 
 
-private: 
+protected: 
     double base_;
     double height_;
 
