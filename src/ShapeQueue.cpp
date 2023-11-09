@@ -2,33 +2,29 @@
 #include <ShapeQueue.h>
 #include <Node.h>
 
-ShapeQueue::ShapeQueue() : front_(NULL) {}
+ShapeQueue::ShapeQueue() : front_(nullptr), back_(nullptr) {}
 
-ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape)
-{
+ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape) {
     this->front_ = sourceShape.front_;
     this->back_ = sourceShape.back_;
 
     Node *current = sourceShape.front_;
 
-    while (current != nullptr)
-    {
+    while (current != nullptr) {
         current->getShape();
         this->pushShape(current->getShape());
         current = current->getNext();
     }
 }
 
-void ShapeQueue::pushShape(Shape *shape_)
-{
-    Node *newNode = new Node(shape_, back_, nullptr);
+void ShapeQueue::pushShape(Shape *shape_) {
+    Node *newNode = new Node(shape_, back_);
 
     // What if back_ and front_ are NULL (i.e., the list is empty)?
     back_ = newNode;
 }
 
-Shape *ShapeQueue::popShape()
-{
+Shape *ShapeQueue::popShape() {
     Shape *poppedData;
 
     if (front_ == NULL) { // What if there's nothing in the list
@@ -53,13 +49,11 @@ Shape *ShapeQueue::popShape()
 
 }
 
-void ShapeQueue::printQueue() const
-{
+void ShapeQueue::printQueue() const {
     Node *current = front_;
 
     // Do you want any kind of header?
-    while (current != NULL) 
-    {
+    while (current != NULL) {
         current->getShape()->print();
         // Do you want to put whitespace between the shape prints?
     }

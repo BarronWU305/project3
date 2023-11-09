@@ -7,10 +7,10 @@ class Rectangle : public Shape {
 public:
   Rectangle(double Length, double Width);
 
-  void setLength (double Length);
+  virtual void setLength (double Length);
   double getLength() const;
   
-  void setWidth (double Width);
+  virtual void setWidth (double Width);
   double getWidth() const;
 
   virtual double getArea() const;

@@ -5,18 +5,23 @@
 #include<string>
 #include<iomanip>
 
+#include<Shape.h>
+
 using namespace std;
 
-class RightTriangle{
+class RightTriangle : public Shape {
 public:
+    RightTriangle(double Base, double Height);
+    
     void setBase (double Base);// get and set the base for triangle
     double getBase() const;
 
     void setHeight (double Height);// get and set the height for triangle
     double getHeight() const;
 
-    double getArea();
-
+    virtual double getArea() const;
+    virtual double getPerimeter() const;
+    virtual void print() const;
 
 private: 
     double base_;

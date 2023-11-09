@@ -30,6 +30,8 @@ int main() {
 	else {
 		cout << "Failed to read the shapes T_T" << endl; 
 	}
+	
+// More options for the user?
 
 
 //All is good :)

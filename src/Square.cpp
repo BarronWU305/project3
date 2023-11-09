@@ -1,7 +1,14 @@
-#include "../inc/Square.h"
+#include <Square.h>
 
-Square::Square() {
-  length_ = 0;
-  width_ = 0;
-  name_ = "";
+Square::Square(double Side) : Rectangle(Side, Side) {
+  name_ = "Square";
 }
+
+
+
+ void Square::setLength (double Length) {
+  Rectangle::setLength(Length);
+  Rectangle::setWidth(Length);
+ }
+
+ // Also handle setWidth
