@@ -19,9 +19,9 @@ public:
     void setHeight (double Height);// get and set the height for triangle
     double getHeight() const;
 
-    virtual double getArea() const;
-    virtual double getPerimeter() const;
-    virtual void print() const;
+    virtual double getArea() const; //declaring polymorphic getArea method
+    virtual double getPerimeter() const; //declaring polymorphic getPerimeter method
+    virtual void print() const; ////declaring print function
 
 protected: 
     double base_;
