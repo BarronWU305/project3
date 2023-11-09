@@ -5,13 +5,15 @@
 #include <string>
 using namespace std;
 
-class Shape
-{
+class Shape {
 public:
+    Shape(string name);
+    
     virtual double getArea() = 0; // used by derived classes for area
     virtual double getPerimeter() = 0; // used by derived classes for area
-    string getName(string shapename); // gets name of shape from input and returns it
-    void print();
+    virtual void print() = 0;
+
+    string getName(); // gets name of shape from input and returns it
 
 private:
     string name_;
