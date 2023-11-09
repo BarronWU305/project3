@@ -40,7 +40,7 @@ int main()
 	}
 
 	// More options for the user?
-	// Include a while loop that allows users to read in more files in order to change the outcomes. which will be structured below:
+	// Include a while loop that allows users to read in more files in order to change the outcomes. which will be structured below (done by Lorenzo and Lee):
 	cout << "Would you like to read in from another file? type 'Yes' or 'No'" << endl;
 	cin >> userinput;
 
