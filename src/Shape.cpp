@@ -16,4 +16,5 @@ string Shape::getName(string shapename)
 }
 void Shape::print()
 {
+    cout << name_ << endl;
 }
