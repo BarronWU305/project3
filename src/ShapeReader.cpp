@@ -3,8 +3,6 @@
 #include <fstream>
 #include <string>
 
-using namespace std;
-
 int readFile(string filename, ShapeQueue &queue) {
      int returnCode = 0;
 
