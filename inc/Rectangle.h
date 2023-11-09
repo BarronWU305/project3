@@ -1,5 +1,5 @@
-#ifndef RECTANGLE_
-#define RECTANGLE_
+#ifndef RECTANGLE_H_
+#define RECTANGLE_H_
 
 #include <Shape.h>
 
@@ -14,7 +14,7 @@ public:
   double getWidth() const;
 
   virtual double getArea() const;
-  virtual double getPerimeter () const; //get the perimeter on thursday 
+  virtual double getPerimeter () const;
   virtual void print() const;
 
 protected:

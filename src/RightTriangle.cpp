@@ -15,20 +15,20 @@ double RightTriangle::getBase() const{
 
 
 void RightTriangle::setHeight(double Height){ // defined both get and set height
-    height_ = Height;
+    height_ = Height; 
 }
 double RightTriangle::getHeight() const{
-    return height_;
+    return height_; // returning the height of the triangle
 }
 
 
 double RightTriangle::getArea() const{ //defined get area
-    return (.5 * (height_ * base_) ); 
+    return (.5 * (height_ * base_) ); //equation for area
 }
 
 
 double RightTriangle::getPerimeter() const{ //defined get perimeter
-    return (height_ + base_ + sqrt(pow(height_) + pow(base_)))
+    return (height_ + base_ + sqrt(pow(height_) + pow(base_))) //equation for perimeter
 }
 
 
