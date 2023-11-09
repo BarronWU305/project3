@@ -5,23 +5,26 @@
 
 using namespace std;
 
-class Ellipse : public Shape {
+class Ellipse : public Shape
+{
 public:
+    // Constructor Method
     Ellipse(double AxisFirst, double AxisSecond);
 
-    //Accessor Methods
+    // Accessor Methods
     virtual void getFirstAxis() const;
     virtual void getSecondAxis() const;
 
-    //Mutator Methods
+    // Mutator Methods
     virtual double getArea() const;
     virtual double getPerimeter() const;
 
+    // Print Method
     virtual void print() const;
 
 protected:
-    double axis_first_;
-    double axis_second_;
+    double axis_first_;  // First Axis
+    double axis_second_; // Second Axis
 };
 
 #endif
