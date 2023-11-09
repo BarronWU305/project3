@@ -1,13 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream> //ADDED IN FSTREAM IN CASE FILES NEED READING IN
-#include <Circle.h>//HEADERFILES HERE
-#include <Hexagon.h>
-#include <Ellipse.h>
 #include <Node.h>
-#include <Rectangle.h>
-#include <Square.h>
-#include <RightTriangle.h>
 #include <Shape.h>
 #include <ShapeQueue.h>
 #include <ShapeReader.h>
