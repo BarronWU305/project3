@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-Shape::Shape(string name) : name_(name) {}
+Shape::Shape(string Name) : name_(Name) {}
 
 string Shape::getName() {
     return name_;

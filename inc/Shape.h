@@ -7,8 +7,8 @@ using namespace std;
 
 class Shape {
 public:
-    Shape(string name);
-    
+    Shape(string Name);
+
     virtual double getArea() = 0; // used by derived classes for area
     virtual double getPerimeter() = 0; // used by derived classes for area
     virtual void print() = 0;
