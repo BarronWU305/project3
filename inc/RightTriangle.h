@@ -11,6 +11,7 @@ using namespace std;
 
 class RightTriangle : public Shape {
 public:
+    // Constructor Method
     RightTriangle(double Base, double Height);
     
     void setBase (double Base);// get and set the base for triangle

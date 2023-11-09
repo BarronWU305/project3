@@ -2,14 +2,21 @@
 #include <ShapeQueue.h>
 #include <Node.h>
 
+// Default constructor
 ShapeQueue::ShapeQueue() : front_(nullptr), back_(nullptr) {}
 
+// Copy constructor
 ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape) {
+    // Setting front and back pointers to sourceShape.
     this->front_ = sourceShape.front_;
     this->back_ = sourceShape.back_;
 
+    // Create a new node called current.
     Node *current = sourceShape.front_;
 
+    // Loop through current and push
+    // each shape to the queue until
+    // it is done.
     while (current != nullptr) {
         current->getShape();
         this->pushShape(current->getShape());
@@ -18,56 +25,65 @@ ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape) {
 }
 
 void ShapeQueue::pushShape(Shape *shape_) {
+    // Creating a new node with shape information.
     Node *newNode = new Node(shape_, back_);
-    if( back_ == nullptr && front_ ==nullptr){
+
+    // Check if back and front are NULL
+    // If so we set back and front to newNode.
+    if (back_ == nullptr && front_ == nullptr) {
         back_, front_ == newNode;
     }
-    else
-    {
+    else{
+        // If back and front aren't NULL, set back to newNode.
         back_ = newNode;
     }
-    // What if back_ and front_ are NULL (i.e., the list is empty)?
-    
 }
 
 Shape *ShapeQueue::popShape() {
     Shape *poppedData;
 
-    if (front_ == nullptr) { // What if there's nothing in the list
-      // Keep in mind that both back_ and front_ should be nullptr
-      return nullptr;// There's nothing to send back
+    if (front_ == nullptr) {
+
+        // If nothing is in the queue, return nullptr.
+
+        return nullptr;
     }
 
     else if (front_ == back_) {
+        // If front and back pointers are pointed at the same node,
+        // Set front and back to NULL.
+        poppedData = front_->getShape();
         front_ = back_ = nullptr;
-         // Or what if there's only one thing in the list
-       // ??? // Make sure to deal with both ptrs
+        
+
+        
     }
 
-    else // Otherwise there are currently two or more items in the list
-    {
+    else {
+        // Popped the front of the queue, set front to temp,
+        // set front_ to the next in line.
+        // Then delete temp.
         poppedData = front_->getShape();
         Node *temp = front_;
-        front_= front_ -> getNext(); 
+        front_ = front_->getNext();
 
         delete temp;
     }
 
     return poppedData;
-
 }
 
 void ShapeQueue::printQueue() const {
     Node *current = front_;
-
-    // Do you want any kind of header?
+    //Made a header.
     cout << "Queue Contents" << endl;
     while (current != nullptr) {
+    //Print the current node, made a new line
+    //Recieved the next node.
         current->getShape()->print();
         cout << "\n";
         current = current->getNext();
-        // Do you want to put whitespace between the shape prints?
     }
-    // Do you want any kind of footer?
+    //Made a footer.
     cout << "End of Queue" << endl;
 }
