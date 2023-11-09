@@ -15,7 +15,7 @@ public:
 
     string getName(); // gets name of shape from input and returns it
 
-private:
+protected:
     string name_;
 };
 #endif

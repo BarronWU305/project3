@@ -8,17 +8,19 @@
 
 using namespace std;
 
-class ShapeQueue
-{
+class ShapeQueue {
 public:
     ShapeQueue();
     ShapeQueue(const ShapeQueue &sourceShape);
+
     void pushShape(Shape *shape_);
     Shape *popShape();
+    
     void printQueue() const;
 
 private:
     Node *front_;
     Node *back_;
 };
+
 #endif
