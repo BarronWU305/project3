@@ -9,7 +9,7 @@ class Hexagon : public Shape {
 public:
   Hexagon(double Length);
 
-  void getLength() const;
+  double getLength() const;
   virtual double getArea() const;
   virtual double getPerimeter() const;
   virtual void print() const;

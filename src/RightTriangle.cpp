@@ -22,15 +22,20 @@ double RightTriangle::getHeight() const{
 }
 
 
-double RightTriangle::getArea() const{
+double RightTriangle::getArea() const{ //defined get area
     return (.5 * (height_ * base_) ); 
 }
 
 
-double RightTriangle::getPerimeter()const{
+double RightTriangle::getPerimeter() const{ //defined get perimeter
     return (height_ + base_ + sqrt(pow(height_) + pow(base_)))
 }
 
-void print(){
-    
+
+void RightTriangle::print() const{
+    cout << "Shape: " << getName() << endl; // printing shape
+    cout << "Base = " << base_ << endl; // printing base
+    cout << "Height = " << height_ << endl; // printing height
+    cout << "Area = " << getArea() << endl; // printing area
+    cout << "Perimeter = " << getPerimeter() << endl; // printing perimeter
 }
