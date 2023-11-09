@@ -21,7 +21,7 @@ int main() {
     
 
 //GET FILE NAME WE NEED TO BE READ IN  
-	cout << "Enter out the name of the file that we will be reading in << endl; 
+	cout << "Enter out the name of the file that we will be reading in" << endl; 
 	cin >> fileName; 
 
 //FOR INPUT ERRORS WHEN FILE OPEN 
