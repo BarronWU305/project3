@@ -10,7 +10,7 @@ void RightTriangle::setBase(double Base){ // defined both get and set height
     base_ = Base;
 }
 double RightTriangle::getBase() const{
-    return base_;
+    return base_; //returning the base of the triangle 
 }
 
 
