@@ -5,6 +5,6 @@ using namespace std;
 
 Shape::Shape(string Name) : name_(Name) {}
 
-string Shape::getName() {
+string Shape::getName() const {
     return name_;
 }

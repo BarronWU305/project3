@@ -3,10 +3,10 @@
 #include<iomanip>
 #include<Rectangle.h>
 
-Rectangle::Rectangle(double Length, double Width) 
+Rectangle::Rectangle(double Length, double Width)      
    : Shape("Rectangle"), length_(Length), width_(Width) {} 
 
-void Rectangle::setLength(double Length){
+void Rectangle::setLength(double Length){ 
     length_= Length;
 }
 double Rectangle::getLength() const{
@@ -24,7 +24,17 @@ double Rectangle::getArea() const{
     return (width_ * length_);
 }
 
-void Rectangle::print() const {}
+double Rectangle::getPerimeter() const{
+    return ((2 * length_) + (2 * width_));
+}
+
+void Rectangle::print() const {
+    cout << "Shape: " << getName() << endl;
+    cout << "Length = " << length_ << endl;
+    cout << "Width = " << width_ << endl;
+    cout << "Area = " << getArea() << endl;
+    cout << "Perimeter = " << getPerimeter() << endl;
+}
 
 
 

@@ -1,0 +1,13 @@
+Square 85.57
+RightTriangle 67.3 24.1
+Rectangle 43.8 9.2
+Hexagon 89.01
+Ellipse 55.9 13.0
+Circle 2331.78
+Hexagon 324598.56
+Hexagon 73850275.76
+Hexagon 830588218420.80
+Circle 12.90
+Rectangle 58583.98 3483785.78
+Ellipse 74932.56 948759675.37
+RightTriangle 879922.96 143345.21
