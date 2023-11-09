@@ -11,4 +11,9 @@ Square::Square(double Side) : Rectangle(Side, Side) {
   Rectangle::setWidth(Length);
  }
 
+  void Square::setWidth (double Width) {
+
+
+    
+  }
  // Also handle setWidth
