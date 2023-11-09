@@ -6,10 +6,10 @@
 #include <ShapeQueue.h>
 #include <ShapeReader.h>
 
-
 using namespace std;
 
-int main() {
+int main()
+{
 	// VARS NEEDED
 	string fileName;
 	ShapeQueue Queue;
@@ -19,8 +19,7 @@ int main() {
 	int base;
 	int width;
 	int radius; // MAY NOT NEED
-	string userinput; 
-	
+	string userinput;
 
 	// GET FILE NAME WE NEED TO BE READ IN
 	cout << "Enter out the name of the file that we will be reading in" << endl;
@@ -33,7 +32,7 @@ int main() {
 	if (codeReturn == 0) {
 		cout << "Shape in our Queue: " << endl;
 		Queue.printQueue();
-	} 
+	}
 	// FALLBACK OFC
 	else {
 		cout << "Failed to read the shapes T_T" << endl;
@@ -41,18 +40,30 @@ int main() {
 	}
 
 	// More options for the user?
-	//Include a while loop that allows users to read in more files in order to change the outcomes. which will be structured below: 
-	cout << "Would you like to read in from another file? type 'Yes' or 'No'" << endl; 
-	cin >> userinput; 
+	// Include a while loop that allows users to read in more files in order to change the outcomes. which will be structured below (done by Lorenzo and Lee):
+	cout << "Would you like to read in from another file? type 'Yes' or 'No'" << endl;
+	cin >> userinput;
 
 	if (userinput == "Yes" || userinput == "yes") {
 		while (userinput != "no" || userinput != "No") {
-		cout << "Enter out the name of the file that we will be reading in" << endl;
-		cin >> fileName;
+			cout << "Enter out the name of the file that we will be reading in" << endl;
+			cin >> fileName;
+
+			codeReturn = readFile(fileName, Queue);
+
+			if (codeReturn == 0) {
+				cout << "Shape in our Queue: " << endl;
+				Queue.printQueue();
+			}
+			// FALLBACK OFC
+			else {
+				cout << "Failed to read the shapes T_T" << endl;
+				return 1; // MISSION ABORT
+			}
+		cout << "Would you like to read in from another file? type 'Yes' or 'No'" << endl;
+		cin >> userinput;
 		}
 	}
-
-
 
 	// All is good :)
 	return 0;

@@ -11,7 +11,7 @@ We'll create the class-level design diagram in class on Monday as a class.  We'l
 
 ## Important Observations:
 *  Your grade for lab this week will be based on your participation in your teams;
-*  Make sure you always do a `git pull` before you start working ... perhaps even `pull` frequently while you work -- always `pull`` before `commit` and `push`;
+*  Make sure you always do a `git pull` before you start working ... perhaps even `pull` frequently while you work -- always `pull` before `commit` and `push`;
 *  This *will get messy*!! We're going to have some repo issues ... that's part of the learning process on this;
 *  Have fun with it!  This is an opportunity for us to play together with code as a class!
 *  This will be yet another example of a linked list for you all to help with your *project 3*.
