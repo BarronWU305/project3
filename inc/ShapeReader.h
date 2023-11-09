@@ -12,6 +12,7 @@
 
 using namespace std;
 
+//function take in parameters for .cpp file 
 int readFile(string filename, ShapeQueue &queue);
 
 #endif

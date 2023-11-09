@@ -3,12 +3,17 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
+
+//Function readFile takes in two parameters 
 int readFile(string filename, ShapeQueue &queue) {
      int returnCode = 0;
 
+     //Opens files
      ifstream fin;
      fin.open(filename);
 
+     //Checks if file could be opened 
      if (!fin.is_open()) {
           cerr << "ERROR:" << filename << " does not exist." << endl;
           returnCode = 1;
@@ -31,14 +36,15 @@ int readFile(string filename, ShapeQueue &queue) {
                     }
                }
                else if (shapeName == "Square") {
-                    double side;
-                    fin >> side;
+                    double length;
+                    double width;
+                    fin >> length >> width;
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read length or width." << endl;
                     }
                     else {
-                         Shape *ptr = new Square(side);
+                         Shape *ptr = new Square(length, width);
                          queue.pushShape(ptr);
                     }
                }
@@ -51,7 +57,7 @@ int readFile(string filename, ShapeQueue &queue) {
                          cerr << "ERROR: Failed to read first and second Axis." << endl;
                     }
                     else {
-                         Shape *ptr = new Ellipse(firstAxis, secondAxis); 
+                         Shape *ptr = new Ellipse(firstAxis, secondAxis); // Except the Ellipse.h doesn't show this constructor
                          queue.pushShape(ptr);
                     }
                }
@@ -97,8 +103,9 @@ int readFile(string filename, ShapeQueue &queue) {
                }
           }
 
+          
           fin.close(); // Close the file after reading
      }
-
-     return returnCode;
+          
+     return returnCode; //Returns the code 
 }
