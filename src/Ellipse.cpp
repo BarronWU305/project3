@@ -26,13 +26,16 @@ double Ellipse::getPerimeter() const {
 
 //get area
 double Ellipse::getArea() const {
-  double area = M_PI * AxisFirst * AxisSecond;
-  return area;
+  return area = M_PI * AxisFirst * AxisSecond;
 }
 
 
 //print Ellipse
 void Ellipse::print() const {
-
+  cout << "Shape: "        << getName()       << endl;
+  cout << "First Axis = "  << getFirstAxis()  << endl;
+  cout << "Second Axis = " << getSecondAxis() << endl;
+  cout << "Area = "        << getArea()       << endl;
+  cout << "Perimeter = "   << getPerimeter()  << endl;
 }
 
