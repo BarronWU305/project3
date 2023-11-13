@@ -25,8 +25,6 @@ ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape) {
 }
 
 void ShapeQueue::pushShape(Shape *shape_) {
-    cerr << "DBG:   pushing shape ... " << shape_->getName() << endl;
-
     // Creating a new node with shape information.
     Node *newNode = new Node(shape_, nullptr);
 

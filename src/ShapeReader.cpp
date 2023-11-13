@@ -22,7 +22,6 @@ int readFile(string filename, ShapeQueue &queue) {
           while (!fin.eof()) {
                string shapeName;
                fin >> shapeName;
-               cerr << "DBG:  Reading " << shapeName << endl;
 
                if (shapeName == "Circle") {
                     double radius;
@@ -33,7 +32,6 @@ int readFile(string filename, ShapeQueue &queue) {
                     }
                     else {
                          Shape *ptr = new Circle(radius); 
-                         cerr << "DBG:   Circle created, about to push" << endl;
                          queue.pushShape(ptr);
                     }
                }
