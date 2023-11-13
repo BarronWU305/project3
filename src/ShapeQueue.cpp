@@ -25,16 +25,20 @@ ShapeQueue::ShapeQueue(const ShapeQueue &sourceShape) {
 }
 
 void ShapeQueue::pushShape(Shape *shape_) {
+    cerr << "DBG:   pushing shape ... " << shape_->getName() << endl;
+
     // Creating a new node with shape information.
-    Node *newNode = new Node(shape_, back_);
+    Node *newNode = new Node(shape_, nullptr);
 
     // Check if back and front are NULL
     // If so we set back and front to newNode.
     if (back_ == nullptr && front_ == nullptr) {
-        back_, front_ == newNode;
+        front_ = newNode;
+        back_ = newNode;
     }
     else{
         // If back and front aren't NULL, set back to newNode.
+        back_->setNext(newNode);
         back_ = newNode;
     }
 }
@@ -81,7 +85,7 @@ void ShapeQueue::printQueue() const {
     //Print the current node, made a new line
     //Recieved the next node.
         current->getShape()->print();
-        cout << "\n";
+        cout << endl;
         current = current->getNext();
     }
     //Made a footer.

@@ -17,3 +17,11 @@ double Circle::getPerimeter() const {
    return 2.0 *radius_ * PI;
 }
 
+
+// RPW:
+void Circle::print() const {
+  std::cout << "Shape: " << getName() << std::endl;
+  std::cout << "Radius: " << radius_ << std::endl;
+  std::cout << "Area: " << getArea() << std::endl;
+  std::cout << "Perimeter: " << getPerimeter() << std::endl;
+}

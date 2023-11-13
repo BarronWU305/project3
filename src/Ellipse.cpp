@@ -19,7 +19,6 @@ double Ellipse::getSecondAxis() const
   return axis_second_;
 }
 
-<<<<<<< HEAD
 //get perimeter
 double Ellipse::getPerimeter() const {
   double h = ((axis_first_ - axis_second_) * (axis_first_ -axis_second_ )) / ((axis_first_ + axis_second_) * (axis_first_ + axis_second_));
@@ -30,20 +29,6 @@ double Ellipse::getPerimeter() const {
 //get area
 double Ellipse::getArea() const {
   return M_PI * axis_first_ * axis_second_;
-=======
-// get perimeter
-double Ellipse::getPerimeter() const
-{
-  double h = ((AxisFirst - AxisSecond) * (AxisFirst - AxisSecond)) / ((AxisFirst + AxisSecond) * (AxisFirst + AxisSecond));
-  double perimeter = M_PI * (AxisFirst + AxisSecond) * (1 + (3 * h) / (10 + std::sqrt(4 - 3 * h)));
-  return perimeter;
-}
-
-// get area
-double Ellipse::getArea() const
-{
-  return area = M_PI * AxisFirst * AxisSecond;
->>>>>>> b80fc22367cba803189235202b2ff1e8bf8f976a
 }
 
 // print Ellipse

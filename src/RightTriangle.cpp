@@ -28,7 +28,7 @@ double RightTriangle::getArea() const{ //defined get area
 
 
 double RightTriangle::getPerimeter() const{ //defined get perimeter
-    return (height_ + base_ + sqrt(pow(height_) + pow(base_))) //equation for perimeter
+    return (height_ + base_ + sqrt(pow(height_, 2.0) + pow(base_,2.0))); //equation for perimeter
 }
 
 

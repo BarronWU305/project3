@@ -22,6 +22,7 @@ int readFile(string filename, ShapeQueue &queue) {
           while (!fin.eof()) {
                string shapeName;
                fin >> shapeName;
+               cerr << "DBG:  Reading " << shapeName << endl;
 
                if (shapeName == "Circle") {
                     double radius;
@@ -32,19 +33,19 @@ int readFile(string filename, ShapeQueue &queue) {
                     }
                     else {
                          Shape *ptr = new Circle(radius); 
+                         cerr << "DBG:   Circle created, about to push" << endl;
                          queue.pushShape(ptr);
                     }
                }
                else if (shapeName == "Square") {
                     double length;
-                    double width;
-                    fin >> length >> width;
+                    fin >> length;
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read length or width." << endl;
                     }
                     else {
-                         Shape *ptr = new Square(length, width);
+                         Shape *ptr = new Square(length);
                          queue.pushShape(ptr);
                     }
                }
