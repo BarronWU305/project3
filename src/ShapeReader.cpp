@@ -29,6 +29,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read radius." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new Circle(radius); 
@@ -41,6 +42,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read length or width." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new Square(length);
@@ -54,6 +56,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read first and second Axis." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new Ellipse(firstAxis, secondAxis); // Except the Ellipse.h doesn't show this constructor
@@ -66,6 +69,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read side length." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new Hexagon(sideLength); 
@@ -80,6 +84,7 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read length or width." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new Rectangle(length, width); 
@@ -94,12 +99,15 @@ int readFile(string filename, ShapeQueue &queue) {
                     // Check if reading failed
                     if (fin.fail()) {
                          cerr << "ERROR: Failed to read base or height." << endl;
+                         fin.clear();
                     }
                     else {
                          Shape *ptr = new RightTriangle(base, height); 
                          queue.pushShape(ptr);
                     }
                }
+
+               fin.ignore();
           }
 
           
