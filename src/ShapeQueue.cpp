@@ -55,10 +55,9 @@ Shape *ShapeQueue::popShape() {
         // If front and back pointers are pointed at the same node,
         // Set front and back to NULL.
         poppedData = front_->getShape();
-        front_ = back_ = nullptr;
-        
-
-        
+        delete back_;
+        front_  = nullptr;
+        back_ = nullptr;
     }
 
     else {

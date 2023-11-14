@@ -5,7 +5,8 @@
 Node::Node() : shape_(nullptr), next_(nullptr), previous_(nullptr) {}
 
 // must have shape pointer, next and previous node optional
-Node::Node(Shape* StoredShape, Node* NextNode, Node* PreviousNode) : shape_(StoredShape), next_(NextNode), previous_(NextNode) {}
+Node::Node(Shape* StoredShape, Node* NextNode, Node* PreviousNode) 
+  : shape_(StoredShape), next_(NextNode), previous_(NextNode) {}
 
 // returns pointer to next node
 Node* Node::getNext() const {

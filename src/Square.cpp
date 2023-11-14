@@ -17,7 +17,7 @@ void Square::setWidth (double Width) {
 
 void Square::print() const{
   std::cout << "Shape: " << getName() << std::endl;
-  std::cout << "Side: " << length_ << std::endl;
+  std::cout << "Side: " << getLength() << std::endl;
   std::cout << "Area: " << getArea() << std::endl;
   std::cout << "Perimeter: " << getPerimeter() << std::endl;
 }

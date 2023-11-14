@@ -4,7 +4,9 @@
 #include<Rectangle.h>
 
 Rectangle::Rectangle(double Length, double Width)      // defined constructor method for shape name
-   : Shape("Rectangle"), length_(Length), width_(Width) {} 
+   : Shape("Rectangle"), length_(Length), width_(Width) {
+  // No-op
+} 
 
 void Rectangle::setLength(double Length){             // function to set length
     length_= Length;
